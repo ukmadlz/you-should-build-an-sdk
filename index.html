@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/infobip.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<header>
+					<img src="images/infobip/orange-and-black.png" id="header-logo" >
+				</header>
+				<section id="cover">
+					<img src="images/infobip/orange-and-white.png" />
+					<h1>The ABC of DX</h1>
+					<h3>Mike Elsmore</h3>
+					<p>Last update: 25/07/2023</p>
+				</section>
+				<section id="bio" class="template white">
+					<img src="images/bio/mike-elsmore.png" />
+					<div class="info">
+						<h1>DevRel <span class="orange" >@InfobipDev</span></h1>
+						<h2>@ukmadlz</h2>
+						<h2>mike.elsmore@infobip.com</h2>
+						<code>npx ukmadlz</code>
+					</div>
+				</section>
+				<section>
+					<img src="images/infobip/orange-and-white.png" />
+				</section>
+				<section class="template orange">
+					<h1>Slide</h1>
+					<p>Orange</p>
+				</section>
+				<section class="template white">
+					<h1>Slide</h1>
+					<p>White</p>
+				</section>
+				<section class="template blue">
+					<h1>Slide</h1>
+					<p>Blue</p>
+				</section>
+				<section class="template white">
+					<h1>Thank you! I'm @ukmadlz</h1>
+					<p>Mike Elsmore - Senior Developer Advocate - Infobip - mike.elsmore@infobip.com</p>
+				</section>
+				<footer>
+					Mike Elsmore @ukmadlz
+				</footer>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+				width: 1920,
+  				height: 1080,
+			});
+			const hideHeaderAndFooter = (event) => {
+				switch(event.currentSlide.id) {
+					case "cover":
+						document.getElementsByTagName("header")[0].style.display = 'none';
+						document.getElementsByTagName("footer")[0].style.display = 'none';
+						break;
+					default:
+						document.getElementsByTagName("header")[0].style.display = 'block';
+						document.getElementsByTagName("footer")[0].style.display = 'block';
+				}
+				if (event.currentSlide.className.includes('orange')) {
+					document.getElementById('header-logo').src = "images/infobip/white-and-white.png"
+				} else if (event.currentSlide.className.includes('white')) {
+					document.getElementById('header-logo').src = "images/infobip/orange-and-black.png"
+				} else {
+					document.getElementById('header-logo').src = "images/infobip/orange-and-white.png"
+				}
+			}
+			Reveal.on('ready', hideHeaderAndFooter);
+			Reveal.on('slidechanged', hideHeaderAndFooter);
+		</script>
+	</body>
+</html>

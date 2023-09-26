@@ -1,0 +1,121 @@
+/**
+ * Infobip theme for reveal.js.
+ *
+ * By Mike Elsmore, http://elsmore.me
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+// Infobip specfic vars
+$infobipColourBlue: #0C1B2C;
+$infobipColourOrange: #FC6422;
+$infobipColourWhite: #FFF;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #0C1B2C;
+
+$mainColor: #fff;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Theme template header -----------------------
+.reveal header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.5em;
+    img#header-logo {
+        height: 3em;
+    }
+}
+  
+// Theme template footer -----------------------
+.reveal footer {
+    color: #ccc;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    font-size: 0.5em;
+    width: 100%;
+}
+
+// Theme Cover
+.reveal #cover {
+    text-align: left;
+    padding-left: 2em;
+    img {
+        height: 2.5em;
+    }
+    h1, h2, h3 {
+        color: $infobipColourWhite;
+    }
+}
+
+// Theme Bio
+.reveal #bio {
+    text-align: left;
+    // padding-left: 2em;
+    img {
+        float: left;
+        width: 40%;
+    }
+    .info {
+        padding-top: 10%;
+        h1 {
+            color: $infobipColourBlue;
+            .orange {
+                color: $infobipColourOrange;
+            }
+        }
+    }
+}
+
+// Theme template colours ----------------------
+.reveal .template.orange {
+    background-color: $infobipColourOrange;
+    color: #fff;
+    h1, h2, h3 {
+        color: #fff;
+    }
+}
+.reveal .template.white {
+    background-color: $infobipColourWhite;
+    color: #222;
+}
+.reveal .template.blue {
+    color: #fff;
+    h1, h2, h3 {
+        color: #fff;
+    }
+}
