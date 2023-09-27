@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>You should build an SDK</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -21,9 +21,15 @@
 				</header>
 				<section id="cover">
 					<img src="images/infobip/orange-and-white.png" />
-					<h1>The ABC of DX</h1>
+					<h1>You should build an SDK</h1>
 					<h3>Mike Elsmore</h3>
-					<p>Last update: 25/07/2023</p>
+					<p>Last update: 27/09/2023</p>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/hungry.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/gifs/hand-up.gif" class="r-stretch" />
 				</section>
 				<section id="bio" class="template white">
 					<img src="images/bio/mike-elsmore.png" />
@@ -34,24 +40,241 @@
 						<code>npx ukmadlz</code>
 					</div>
 				</section>
+				<section class="template white">
+					<img src="images/talk-bot.png" class="r-stretch"/>
+				</section>
+				<section class="template orange">
+					<h1>How are you doing?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>😃 <span id="data-answer-1" >0</span></h2>
+						<h2>😞 <span id="data-answer-2" >0</span></h2>
+					</div>
+				</section>
 				<section>
 					<img src="images/infobip/orange-and-white.png" />
 				</section>
-				<section class="template orange">
-					<h1>Slide</h1>
-					<p>Orange</p>
+				<section class="template white">
+					<h1>Heard of Infobip?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>✅ Yep <span id="data-answer-3" >0</span></h2>
+						<h2>❌ No idea who <span id="data-answer-4" >0</span></h2>
+					</div>
 				</section>
 				<section class="template white">
-					<h1>Slide</h1>
-					<p>White</p>
+					<img src="images/gifs/get-on-with-it.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/gifs/weve-never-done-it-before.gif" class="r-stretch" />
 				</section>
 				<section class="template blue">
-					<h1>Slide</h1>
-					<p>Blue</p>
+					<h1 class="fragment">What they are</h1>
+					<h1 class="fragment">Why you should</h1>
+					<h1 class="fragment">How you can</h1>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/what-are-you-even-talking-about.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<h1>Are you sure what an SDK is?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>👍 Yes, I'm certain <span id="data-answer-5" >0</span></h2>
+						<h2>🤔 I'm not 100% sure <span id="data-answer-6" >0</span></h2>
+						<h2>👎 No idea my dude <span id="data-answer-7" >0</span></h2>
+					</div>
+				</section>
+				<section class="template orange">
+					<h1><span class="fragment">Software</span> <span class="fragment">Development</span> <span class="fragment">Kit</span></h1>
+				</section>
+				<section class="template blue">
+					<h1><span class="fragment">SDK</span> <span class="fragment">!=</span> <span class="fragment">Client Library</span></h1>
+				</section>
+				<section class="template white" >
+					<blockquote>A software development kit (SDK) is a collection of software development tools in one installable package. They facilitate the creation of applications by having a compiler, debugger and sometimes a software framework. They are normally specific to a hardware platform and operating system combination. To create applications with advanced functionalities such as advertisements, push notifications, etc; most application software developers use specific software development kits.</blockquote>
+					<p>Some people on Wikipedia - https://en.wikipedia.org/wiki/Software_development_kit</p>
+				</section>
+				<section class="template white">
+					<img src="images/playstation-sdk.png" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/nintento-sdk.jpeg" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/occulus-sdk.jpg" class="r-stretch" />
+				</section>
+				<section class="template blue">
+					<h1>https://github.com/infobip-community/infobip-api-node-sdk</h1>
+					<h1 class="fragment">is not an SDK</h1>
+					<h2 class="fragment">😭 I'm sorry, forgive me 🙏</h2>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/blah blah.gif" class="r-stretch" />
+				</section>
+				<section class="template blue">
+					<h1>For pure software SDKs it's a collection of tools</h1>
+					<h2 class="fragment">Can be you http client library</h2>
+					<h2 class="fragment">Webhook definitions</h2>
+					<h2 class="fragment">Mathematical modesl</h2>
+					<h2 class="fragment">…etc</h2>
+				</section>
+				<section class="template white">
+					<h1>Do you agree?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>👍 Yes <span id="data-answer-8" >0</span></h2>
+						<h2>👎 No* <span id="data-answer-9" >0</span></h2>
+					</div>
+					<p class="fragment" >* if you don't grab me after as I'm curious on your take</p>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/why.gif" class="r-stretch" />
+				</section>
+				<section class="template orange">
+					<h1>Aren't SDKs only for external developers or clients?</h1>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/no.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/gifs/you-get-a-taco.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<h1>Internal & External developers deserve the same tools</h1>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/but-why.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/gifs/evidence.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/gifs/personal-opinion.gif" class="r-stretch" />
+				</section>
+				<section class="template blue">
+					<h1>Let's go through my reasons</h1>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/blah blah.gif" class="r-stretch" />
+				</section>
+				<section class="template blue">
+					<h1>APIs <span class="fragment" >are hard</span></h1>
+				</section>
+				<section class="template white">
+					<h1 class="fragment">REST</h1>
+					<h1 class="fragment">GraphQL</h1>
+					<h1 class="fragment">SOAP</h1>
+					<h1 class="fragment">…that's just HTTP APIs</h1>
+				</section>
+				<section class="template blue">
+					<h1>Lowers the learning curve</h1>
+				</section>
+				<section class="template white">
+					<h1>Speeds up the implementation</h1>
+				</section>
+				<section class="template white">
+					<h1>Provides a consistent interface regardless of API schema</h1>
+				</section>
+				<section class="template white">
+					<h1>Who has built an SDK?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>👷 I have <span id="data-answer-10" >0</span></h2>
+						<h2>💨 Nope <span id="data-answer-11" >0</span></h2>
+					</div>
+				</section>
+				<section class="template white">
+					<h1>Are these good enough reasons to try?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>👍 Yes <span id="data-answer-12" >0</span></h2>
+						<h2>👎 No <span id="data-answer-13" >0</span></h2>
+					</div>
+				</section>
+				<section class="template orange">
+					<h1>Why would you build one?</h1>
+					<h2 class="fragment">I'll be asking at the end (if we have time for questions)</h2>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/tell-me-how.gif" class="r-stretch" />
+				</section>
+				<section class="template blue">
+					<h1>Use the instructions in your given langugage/framework</h1>
+				</section>
+				<section class="template blue">
+					<h1>Use a namespace where possible</h1>
+				</section>
+				<section class="template white">
+					<img src="images/namespace.png" class="r-stretch" />
+				</section>
+				<section class="template orange">
+					<h1>Client library</h1>
+				</section>
+				<section class="template white">
+					<h1>FOLLOW A STANDARD</h1>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/absolutely-do-it.gif" class="r-stretch" />
+				</section>
+				<section class="template orange">
+					<h1>If you can't</h1>
+					<h1 class="fragment">…document everything</h1>
+				</section>
+				<section class="template white">
+					<h1>It's ok to use generators</h1>
+				</section>
+				<section class="template white">
+					<h1>OpenAPI <span class="fragment"> > OpenAPI Generators</span></h1>
+				</section>
+				<section class="template white">
+					<h1>If you don't like them…</h1>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/knitting-is-my-job.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<img src="images/gifs/remind-you.gif" class="r-stretch" />
+				</section>
+				<section class="template blue">
+					<h1><span class="fragment">VERSION</span><span class="fragment"> EVERY</span><span class="fragment">THING</span></h1>
+					<h2 class="fragment">I don't care how</h2>
+				</section>
+				<section class="template white">
+					<h1>Use dependency management</h1>
+				</section>
+				<section class="template white">
+					<h1>Have some static analysis tooling</h1>
+				</section>
+				<section class="template white">
+					<img src="images/gifs/oh-at-last.gif" class="r-stretch" />
+				</section>
+				<section class="template white">
+					<h1>Try not to mix langugages/frameworks in the same SDK</h1>
+				</section>
+				<section class="template white">
+					<h1>Was this useful?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>👍 Yes <span id="data-answer-14" >0</span></h2>
+						<h2>👎 No <span id="data-answer-15" >0</span></h2>
+					</div>
+				</section>
+				<section class="template white">
+					<h1>Was it a little funny?</h1>
+					<img src="images/talk-bot.png"/>
+					<div class="fragment">
+						<h2>🤣🤣🤣 <span id="data-answer-16" >0</span></h2>
+					</div>
+				</section>
+				<section class="template white">
+					<h1>Questions?</h1>
+					<img src="images/talk-bot.png" class="r-stretch"/>
+					<p>Scan and send a message for me to send you 20€ later</p>
 				</section>
 				<section class="template white">
 					<h1>Thank you! I'm @ukmadlz</h1>
-					<p>Mike Elsmore - Senior Developer Advocate - Infobip - mike.elsmore@infobip.com</p>
+					<p>Mike Elsmore - Senior Developer Advocate - Infobip - mike.elsmore@infobip.com - <code>npx ukmadlz</code></p>
 				</section>
 				<footer>
 					Mike Elsmore @ukmadlz
@@ -63,6 +286,9 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+		<script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -71,7 +297,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealChart ],
 
 				width: 1920,
   				height: 1080,
@@ -96,6 +322,17 @@
 			}
 			Reveal.on('ready', hideHeaderAndFooter);
 			Reveal.on('slidechanged', hideHeaderAndFooter);
+			var client = new Ably.Realtime.Promise({ key: "a85ghw.oSw1Qg:cSR2Lm3e6mGGR7JZZHBxTMy8zm-4HyY3_CxzXPzO8og" });
+			client.connection.on('connected', function() {
+				console.log('Connected to Ably');
+				var channel = client.channels.get('you-should-write-an-sdk');
+				channel.subscribe(function (message) {
+					if (message.name === 'answer') {
+						var data = JSON.parse(message.data);
+						document.getElementById('data-answer-' + data.answerId).innerHTML = +(document.getElementById('data-answer-' + data.answerId).innerHTML) + +1;
+					}
+				});
+			});
 		</script>
 	</body>
 </html>
